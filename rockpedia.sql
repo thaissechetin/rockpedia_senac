@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 21-Jun-2022 às 19:42
+-- Tempo de geração: 21-Jun-2022 às 21:54
 -- Versão do servidor: 10.4.22-MariaDB
 -- versão do PHP: 8.0.13
 
@@ -52,6 +52,16 @@ CREATE TABLE `usuarios` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
+-- Extraindo dados da tabela `usuarios`
+--
+
+INSERT INTO `usuarios` (`id`, `nome`, `email`, `senha`, `tipo`) VALUES
+(1, 'Izabelle', 'izabelle@gmail.com', '$2y$10$pTxP.WfEi.TenPO/m1y04.W6aJI375ZtYgcJcE1a.1P6j0RX3l6e6', 'admin'),
+(2, 'Thaís', 'tais.sech@gmail.com', '$2y$10$JORhexBPNhSeMx4eQI946Oxwmxx5kJsxCK1/Vp1IZm.d4Dli8Izr2', 'admin'),
+(3, 'Jpga32', 'pedroganacim@gmail.com', '$2y$10$eqJ.JGZP1Ebfmjlwx.qILeswgJFCTKaytaBHa.seXmzLLGuZlIH7.', 'admin'),
+(4, 'camargo', 'guisafeju@gmail.com', '$2y$10$JcDAinOuAg.gv6Frw5E.yO3/34r9XX5AdO6nZH48wwQwjsmyxdTAi', 'admin');
+
+--
 -- Índices para tabelas despejadas
 --
 
@@ -83,7 +93,7 @@ ALTER TABLE `posts`
 -- AUTO_INCREMENT de tabela `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` smallint(6) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` smallint(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- Restrições para despejos de tabelas
