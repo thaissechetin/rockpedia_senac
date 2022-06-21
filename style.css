@@ -1,3 +1,7 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
 .pcd {
     display: flex;
     justify-content: flex-end;

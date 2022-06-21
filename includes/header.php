@@ -1,3 +1,6 @@
+<?php
+ob_start(); 
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -93,3 +96,4 @@
         </div>
     </nav>
 </header>
+<main class="container-fluid">
