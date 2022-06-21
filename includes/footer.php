@@ -1,5 +1,5 @@
 <footer>
-    <p class="text-center">Projeto Integrador - Senac 2022</p>
+    <p class="text-center">RockPedia | Senac Penha &copy; 2022</p>
 </footer>
 <!-- Slick -->
 <script src="js/jquery-3.6.0.min.js"></script>
