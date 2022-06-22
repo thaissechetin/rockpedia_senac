@@ -55,7 +55,7 @@ if (isset($_POST['atualizar'])) {
         <label for="imagem" class="form-label">Caso queira mudar, selecione outra imagem:</label>
         <input class="form-control" type="file" id="imagem" name="imagem" accept="image/png, image/jpeg, image/gif, image/svg+xml">
     </div>
-
+    <br>
     <button class="btn btn-dark" name="atualizar">Atualizar post</button>
 </form>
 

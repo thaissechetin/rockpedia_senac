@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+    font-family: 'poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: #070707;
+}
+
+main {
+    margin-bottom: 35px;
+}
+
+footer {
+    background-color: #070707;
+    color: #fff;
+}
+
+p {
+    text-align: justify;
+}
+
+.logo {
+    font-family: 'New Rocker', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+}
+
+.nav-link {
+    font-size: 1.5rem;
+}
+
+.pcd {
+    display: flex;
+    justify-content: center;
+    height: 38px;
+    align-items: center;
+}
+
+.btn-pcd {
+    color: #fff;
+    background-color: #c72434;
+    font-weight: bold;
+    padding: 0.2rem 0.7rem;
+    margin: 0.5rem;
+    font-size: large;
+    border-radius: 10px;
+}
+
+.btn-pcd:hover {
+    color: #070707;
+    background-color: #fff;
+}
+
+button {
+    border: none;
+}
+
+.limitador {
+    margin-top: 105px;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.lead {
+    font-size: 1.5rem;
+}
+
+.btn-conteudo {
+    text-align: center;
+}
+
+.modo-contraste{
+    background-color: #141414;
+    color: #fff;
+}
+
+#slider {
+    margin: 0 auto;
+    width: 100%;
+ }
+
+#slider img {
+    width: 18rem;
+    height: 200px;
+}
+
+.slick-prev::before,
+.slick-next::before {
+    color: black;
+}
+
+.inicio p {
+    text-indent: 1.5rem;
+    word-spacing: 5px;
+    line-height: 28px;
+}

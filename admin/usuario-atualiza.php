@@ -51,7 +51,7 @@ if (isset($_POST['atualizar'])) {
 
     <div class="form-group">
         <label for="tipo">Tipo:</label>
-        <select class="custom-select" name="tipo" id="tipo" required>
+        <select class="form-select" name="tipo" id="tipo" required>
             <option value="<?= $tipo ?>"></option>
             <option <?php if ($usuario['tipo'] == 'editor') {
                         echo " selected ";
@@ -61,7 +61,7 @@ if (isset($_POST['atualizar'])) {
                     } ?> value="admin">Administrador</option>
         </select>
     </div>
-
+    <br>
     <button class="btn btn-dark" name="atualizar">Atualizar usuário</button>
 </form>
 

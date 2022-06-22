@@ -37,6 +37,7 @@ if (isset($_POST['atualizar'])) {
         <i class="fa-solid fa-eye senha1"></i>
         <input class="form-control" type="password" id="senha" name="senha" placeholder="Preencha apenas se for alterar">
     </div>
+    <br>
     <button class="btn btn-dark" name="atualizar">Atualizar</button>
 </form>
 

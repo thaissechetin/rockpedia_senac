@@ -1,12 +1,10 @@
 <?php
 require "includes/header.php";
 ?>
-<main class="container-fluid">
-    <article class="inicio">
+    <article class="container">
         <h1 class="text-center display-5">A história do Rock</h1>
 
         <h2 class="h4">Década de 50</h2>
-
 
         <p>
             O Rock surgiu na década de 50 através da mistura de três gêneros musicais:

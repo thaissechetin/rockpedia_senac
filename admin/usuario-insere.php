@@ -32,13 +32,13 @@ if (isset($_POST['inserir'])) {
 
 	<div class="form-group">
 		<label for="tipo">Tipo:</label>
-		<select class="custom-select" name="tipo" id="tipo" required>
+		<select class="form-select" name="tipo" id="tipo" required>
 			<option value=""></option>
 			<option value="editor">Editor</option>
 			<option value="admin">Administrador</option>
 		</select>
 	</div>
-
+	<br>
 	<button class="btn btn-dark" id="inserir" name="inserir">Inserir usuário</button>
 </form>
 

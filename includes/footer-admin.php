@@ -1,5 +1,5 @@
 </main>
-<footer>
+<footer class="fixed-bottom">
     <p class="text-center">RockPedia | Senac Penha &copy; 2022</p>
 </footer>
 <!-- bootstrap js -->

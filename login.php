@@ -57,7 +57,7 @@ if (isset($_GET['acesso_proibido'])) {
 
 <div class="container">
     <h2 class="text-center display-4">Acesso administrativo</h2>
-    <p class="text-center display-6">
+    <p class="text-center display-6 text-danger">
         <?= $feedback ?>
       </p>
     <form action="" method="post" id="form-login" name="form-login" class="card">

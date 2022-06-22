@@ -40,7 +40,7 @@ if (isset($_POST['inserir'])) {
         <label for="imagem" class="form-label">Selecione uma imagem:</label>
         <input required class="form-control" type="file" id="imagem" name="imagem" accept="image/png, image/jpeg, image/gif, image/svg+xml">
     </div>
-
+    <br>
     <button class="btn btn-dark" id="inserir" name="inserir">Inserir post</button>
 
 </form>
