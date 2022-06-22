@@ -56,7 +56,7 @@ if (isset($_GET['acesso_proibido'])) {
 ?>
 
 <div class="container">
-    <h2 class="text-center">Acesso administrativo</h2>
+    <h2 class="text-center display-4">Acesso administrativo</h2>
     <p class="text-center display-6">
         <?= $feedback ?>
       </p>
@@ -70,7 +70,7 @@ if (isset($_GET['acesso_proibido'])) {
             <i class="fa-solid fa-eye senha1"></i>
             <input class="form-control" type="password" id="senha" name="senha">
         </div>
-        <button class="btn btn-primary btn-lg" name="entrar" type="submit">Entrar</button>
+        <button class="btn btn-dark" name="entrar" type="submit">Entrar</button>
     </form>
 </div>
 
