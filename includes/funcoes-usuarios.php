@@ -1,7 +1,7 @@
 <?php
 require "conecta.php";
 
-// Função inserirUsuario: usada em usuario-insere.php
+// Função inserirUsuario
 function inserirUsuario(mysqli $conexao, string $nome, string $email, string $senha, string $tipo)
 {
     $sql = "INSERT INTO usuarios(nome, email, senha, tipo)
@@ -10,16 +10,14 @@ function inserirUsuario(mysqli $conexao, string $nome, string $email, string $se
 }
 // fim inserirUsuario
 
-
-
-// Função codificaSenha: usada em usuario-insere.php e usuario-atualiza.php
+// Função codificaSenha
 function codificaSenha(string $senha): string
 {
     return password_hash($senha, PASSWORD_DEFAULT);
 }
 // fim codificaSenha
 
-// Função lerUsuarios: usada em usuarios.php
+// Função lerUsuarios
 function lerUsuarios(mysqli $conexao): array
 {
     $sql = "SELECT id, nome, email, tipo FROM usuarios ORDER BY nome";
@@ -32,9 +30,7 @@ function lerUsuarios(mysqli $conexao): array
 }
 // fim lerUsuarios
 
-
-
-// Função excluirUsuario: usada em usuario-exclui.php
+// Função excluirUsuario
 function excluirUsuario($conexao, $id)
 {
     $sql = "DELETE FROM usuarios WHERE id = $id";
@@ -42,7 +38,7 @@ function excluirUsuario($conexao, $id)
 }
 // fim excluirUsuario
 
-// Função lerUmUsuario: usada em usuario-atualiza.php
+// Função lerUmUsuario
 function lerUmUsuario(mysqli $conexao, int $id): array
 {
     $sql = "SELECT id, nome, email, senha, tipo FROM usuarios WHERE id = $id";
@@ -51,23 +47,21 @@ function lerUmUsuario(mysqli $conexao, int $id): array
 }
 // fim lerUmUsuario
 
-
-// Função verificaSenha: usada em usuario-atualiza.php
+// Função verificaSenha
 function verificaSenha(string $senhaFormulario, string $senhaBanco)
 {
     // usamos a password_verify() para comparar as duas senhas: a senha digitada no formulário e a existente no banco de dados
     if (password_verify($senhaFormulario, $senhaBanco)) {
-        // se elas forem iguais então significa que o usuário não mudou, portanto mantemos a senha já existente no banco
+        // se elas forem iguais então significa que o usuário não mudou
         return $senhaBanco;
     } else {
-        // mas se forem diferentes, então pegamos a senha do formulário e a codificamos antes de enviar para o banco
+        // mas se forem diferentes, codificamos antes de enviar para o banco
         return codificaSenha($senhaFormulario);
     }
 }
 // fim verificaSenha
 
-
-// Função atualizarUsuario: usada em usuario-atualiza.php
+// Função atualizarUsuario
 function atualizarUsuario(mysqli $conexao, int $id, string $nome, string $email, string $senha, string $tipo)
 {
     $sql = "UPDATE usuarios SET nome = '$nome', email = '$email', senha = '$senha', tipo = '$tipo' WHERE id = $id";
@@ -75,9 +69,7 @@ function atualizarUsuario(mysqli $conexao, int $id, string $nome, string $email,
 }
 // fim atualizarUsuario
 
-
-
-// Função buscarUsuario: usada em login.php
+// Função buscarUsuario
 function buscarUsuario(mysqli $conexao, string $email)
 {
     $sql = "SELECT id, nome, email, senha, tipo FROM usuarios WHERE email = '$email'";

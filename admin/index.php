@@ -8,7 +8,9 @@ require "../includes/header-admin.php";
 </p>
 <a class="btn btn-outline-dark" href="meu-perfil.php">Meu perfil</a>
 <a class="btn btn-outline-dark" href="posts.php">Gerenciar Posts</a>
-<a class="btn btn-outline-dark" href="usuarios.php">Gerenciar Usuários</a>
+<?php if ($_SESSION['tipo'] == 'admin') { ?>
+  <a class="btn btn-outline-dark" href="usuarios.php">Gerenciar Usuários</a>
+<?php } ?>
 
 <?php
 require "../includes/footer-admin.php";

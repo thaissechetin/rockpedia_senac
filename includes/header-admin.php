@@ -4,7 +4,6 @@ require "../includes/funcoes-sessao.php";
 verificaAcesso();
 // detectar quando o sair é acionado
 if (isset($_GET['sair'])) {
-  // chamamos a função logout
   logout();
 }
 // Guardando o nome da página atual

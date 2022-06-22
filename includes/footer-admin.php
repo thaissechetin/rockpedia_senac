@@ -13,7 +13,7 @@
 <?php } ?>
 
 <?php if ($pagina == 'post-insere.php' || $pagina == 'post-atualiza.php') { ?>
-    <script src="js/contador-de-caracteres.js"></script>
+    <script src="../js/contador-de-caracteres.js"></script>
 <?php } ?>
 
 </body>
