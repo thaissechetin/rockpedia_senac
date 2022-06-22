@@ -20,7 +20,7 @@ $resultado = busca($conexao, $termo);
                     </time> -
                     <?= $post['descricao'] ?>
                 </p>
-                <a href="post-detalhe.php" class="card-link">Continuar lendo</a>
+                <a href="post-detalhe.php?id=<?= $post['id'] ?>" class="card-link">Continuar lendo</a>
             </div>
         </article>
     </div>
