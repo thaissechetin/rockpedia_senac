@@ -4,7 +4,7 @@ require "includes/funcoes-posts.php";
 $idPost = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);
 $post = lerDetalhes($conexao, $idPost);
 ?>
-
+<article class="container-fluid">
 <h2 class="text-center display-3"> <?= $post['titulo'] ?> </h2>
 <p class="font-weight-light lead">
     <time>
@@ -16,7 +16,7 @@ $post = lerDetalhes($conexao, $idPost);
 
 <p><?= nl2br($post['texto']) ?></p>
 
-
+</article>
 <?php
 require "includes/footer.php";
 ?>
