@@ -147,9 +147,24 @@ button {
     color: #070707;
 }
 
-form {
+.login {
     background-color: #fff;
     color: #070707;
+}
+
+.card-link {
+    color: darkblue;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.card-link:hover {
+    color: darkblue;
+}
+
+.fa-xmark, .fa-lock-open, .fa-lock, .fa-house  {
+    font-size: 1.5rem;
 }
 
 @media screen and (max-width: 490px) {

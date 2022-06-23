@@ -8,6 +8,16 @@ if (isset($_GET['sair'])) {
 }
 // Guardando o nome da página atual
 $pagina = basename($_SERVER['PHP_SELF']);
+switch ($pagina) {
+    case 'index.php': $titulo = "Home"; break;
+    case 'meu-perfil.php': $titulo = "Perfil"; break;
+    case 'posts.php': $titulo = "Posts"; break;
+    case 'post-insere.php': $titulo = "Inserir Post"; break;
+    case 'post-atualiza.php': $titulo = "Atualizar Post"; break;
+    case 'usuarios.php': $titulo = "Usuários"; break;
+    case 'usuario-insere.php': $titulo = "Inserir Usuário"; break;
+    default: $titulo = "Atualizar Usuário"; break;
+}
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -27,7 +37,7 @@ $pagina = basename($_SERVER['PHP_SELF']);
 
 <body>
     <header>
-        <nav class="navbar navbar-light navbar-expand-lg sticky-top bg-danger  fixed-top">
+        <nav class="navbar navbar-light navbar-expand-lg sticky-top bg-danger fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand logo" href="index.php">Administração</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -41,18 +51,23 @@ $pagina = basename($_SERVER['PHP_SELF']);
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="index.php">Home</a>
+                                <a class="nav-link" aria-current="page" href="index.php"><i class="fa-solid fa-house"></i></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="../index.php" target="_blank">Área pública</a>
+                                <a class="nav-link" aria-current="page" href="../index.php" target="_blank"><i class="fa-solid fa-lock-open"></i></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="?sair">Sair</a>
+                                <a class="nav-link" aria-current="page" href="?sair"><i class="fa-solid fa-xmark"></i></a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </nav>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item" aria-current="page"><a href="index.php">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page"><?=$titulo?></li>
+            </ol>
     </header>
     <main class="container">

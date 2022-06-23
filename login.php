@@ -57,7 +57,7 @@ if (isset($_POST['entrar'])) {
   <p class="text-center display-6 text-danger">
     <?= $feedback ?>
   </p>
-  <form action="" method="post" id="form-login" name="form-login" class="card">
+  <form action="" method="post" id="form-login" name="form-login" class="card login">
     <div class="form-group label-float">
       <label for="email">E-mail:</label>
       <br>
