@@ -24,15 +24,15 @@ if (isset($_POST['atualizar'])) {
 <h2 class="text-center display-4">Atualizar meu perfil</h2>
 
 <form action="" method="post" id="form-atualizar" name="form-atualizar" class="mx-auto w-75">
-    <div class="form-group">
+    <div class="form-group label-float">
         <label for="nome">Nome:</label>
         <input class="form-control" value="<?= $usuario['nome'] ?>" required type="text" id="nome" name="nome" placeholder="Nome (obrigatório)">
     </div>
-    <div class="form-group">
+    <div class="form-group label-float">
         <label for="email">E-mail:</label>
         <input class="form-control" value="<?= $usuario['email'] ?>" required type="email" id="email" name="email" placeholder="E-mail (obrigatório)">
     </div>
-    <div class="form-group">
+    <div class="form-group label-float">
         <label for="senha">Senha</label>
         <i class="fa-solid fa-eye senha1"></i>
         <input class="form-control" type="password" id="senha" name="senha" placeholder="Preencha apenas se for alterar">

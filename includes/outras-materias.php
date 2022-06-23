@@ -10,7 +10,7 @@ $posts = lerTodosOsPosts($conexao);
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title"><?= $post['titulo'] ?></h5>
                     <p class="card-text"><?= $post['descricao'] ?></p>
-                    <a href="post-detalhe.php?id=<?= $post['id'] ?>" class="btn btn-outline-dark mt-auto">Ler mais!</a>
+                    <a href="post-detalhe.php?id=<?= $post['id'] ?>" class="btn btn-danger mt-auto">Ler mais!</a>
                 </div>
             </div>
         </div>

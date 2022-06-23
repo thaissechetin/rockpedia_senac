@@ -3,6 +3,7 @@ ob_start();
 $pagina = basename($_SERVER['PHP_SELF']);
 switch($pagina) {
     case 'index.php': $titulo = "Home | RockPedia"; break;
+    case 'post-detalhe.php': $titulo = "Post | RockPedia"; break;
     default: $titulo = "Login | RockPedia"; break;
 }
 ?>
@@ -22,12 +23,12 @@ switch($pagina) {
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- nosso CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header class="stick fixed-top">
-    <?php if ($pagina == 'index.php') { ?>
+    <?php if ($pagina = 'index.php' && 'post-detalhe.php') { ?>
         <div class="pcd">
             <button class="btn-pcd" title="Contraste"><i class="fa-solid fa-circle-half-stroke"></i></button>
             <button class="btn-pcd" id="aumentar" title="Aumentar fonte">A +</button>
