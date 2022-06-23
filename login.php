@@ -52,7 +52,7 @@ if (isset($_POST['entrar'])) {
 }
 ?>
 
-<div class="container">
+<div class="container pt-5">
   <h2 class="text-center display-4">Acesso administrativo</h2>
   <p class="text-center display-6 text-danger">
     <?= $feedback ?>

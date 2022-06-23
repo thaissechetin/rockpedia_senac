@@ -14,4 +14,6 @@ $posts = lerTodosOsPosts($conexao);
         </div>
     <?php } ?>
 </div>
-</main>
+<form action="" method="post">
+
+</form>

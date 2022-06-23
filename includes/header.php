@@ -57,18 +57,18 @@ switch ($pagina) {
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="index.php"><i class="fa-solid fa-house"></i></a>
+                                <a class="nav-link" aria-current="page" href="index.php"><i class="fa-solid fa-house" title="Home"></i></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" aria-current="page" href="quiz.php">Quiz</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="login.php"><i class="fa-solid fa-lock"></i></a>
+                                <a class="nav-link" aria-current="page" href="login.php"><i class="fa-solid fa-lock" title="Login"></i></a>
                             </li>
                         </ul>
                         <form class="d-flex" action="search.php" method="get">
                             <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search" name="q">
-                            <button class="btn btn-outline-dark" type="submit"><i class="fas fa-search"></i></button>
+                            <button class="btn btn-outline-dark" type="submit"><i class="fas fa-search" title="Busca"></i></button>
                         </form>
                     </div>
                 </div>
