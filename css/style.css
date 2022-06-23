@@ -136,11 +136,6 @@ button {
 }
 
 .card-body {
-    background-color: #070707;
-    color: #fff;
-}
-
-.contraste {
-    background-color: #fff;
+    background-color: crimson;
     color: #070707;
 }
