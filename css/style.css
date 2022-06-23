@@ -91,16 +91,6 @@ button {
     color: #fff;
 }
 
-#slider {
-    margin: 0 auto;
-    width: 100%;
- }
-
-#slider img {
-    width: 18rem;
-    height: 200px;
-}
-
 .slick-prev::before,
 .slick-next::before {
     color: black;
@@ -138,7 +128,8 @@ button {
 }
 
 .detalhe img {
-    max-width: 100%;
+    display: block;
+    text-align: center;
 }
 
 .card-body {
@@ -149,6 +140,14 @@ button {
 .login {
     background-color: #fff;
     color: #070707;
+}
+
+#slick {
+    height: 50vh;
+}
+
+.card img{
+    height: 350px;
 }
 
 .card-link {
