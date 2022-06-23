@@ -20,27 +20,27 @@ if (isset($_POST['inserir'])) {
 <!-- adicionamos o atributo enctype para habilitar o suporte de envio de arquivos via formulário -->
 <form enctype="multipart/form-data" class="mx-auto w-75" action="" method="post" id="form-inserir" name="form-inserir">
 
-    <div class="form-group">
+    <div class="form-group label-float">
         <label for="titulo">Título:</label>
         <input class="form-control" required type="text" id="titulo" name="titulo">
     </div>
 
-    <div class="form-group">
+    <div class="form-group textos">
         <label for="texto">Texto:</label>
-        <textarea class="form-control" required name="texto" id="texto" cols="50" rows="10"></textarea>
+        <textarea class="form-control" required name="texto" id="texto" cols="30" rows="10"></textarea>
     </div>
 
-    <div class="form-group">
+    <div class="form-group textos">
         <label for="descricao">Descrição (máximo de 250 caracteres):</label>
         <span id="maximo" class="badge bg-danger">0</span>
-        <textarea class="form-control" required name="descricao" id="descricao" cols="50" rows="3" maxlength="250"></textarea>
+        <textarea class="form-control" required name="descricao" id="descricao" cols="30" rows="3" maxlength="250"></textarea>
     </div>
 
-    <div class="form-group">
+    <div class="form-group label-float">
         <label for="imagem" class="form-label">Selecione uma imagem:</label>
         <input required class="form-control" type="file" id="imagem" name="imagem" accept="image/png, image/jpeg, image/gif, image/svg+xml">
     </div>
-
+    <br>
     <button class="btn btn-dark" id="inserir" name="inserir">Inserir post</button>
 
 </form>

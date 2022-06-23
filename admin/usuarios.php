@@ -9,7 +9,6 @@ $quantidade = count($usuarios);
 <h2 class="text-center display-4">
 	Usuários <span class="badge bg-dark"><?= $quantidade ?></span>
 </h2>
-
 <p class="lead text-right">
 	<a class="btn btn-dark" href="usuario-insere.php">Inserir novo usuário</a>
 </p>

@@ -49,4 +49,6 @@ $quantidade = count($posts);
 </div>
 
 
-<?php require "../includes/footer-admin.php"; ?>
+<?php 
+require "../includes/footer-admin.php"; 
+?>
