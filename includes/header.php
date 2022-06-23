@@ -60,6 +60,9 @@ switch ($pagina) {
                                 <a class="nav-link" aria-current="page" href="index.php"><i class="fa-solid fa-house"></i></a>
                             </li>
                             <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="quiz.php">Quiz</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link" aria-current="page" href="login.php"><i class="fa-solid fa-lock"></i></a>
                             </li>
                         </ul>
