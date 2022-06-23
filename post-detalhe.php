@@ -11,9 +11,11 @@ $post = lerDetalhes($conexao, $idPost);
             <?= formataData($post['data']) ?>
         </time> - <span><?= $post['autor'] ?></span>
     </p>
-    <img src="imagens/<?= $post['imagem'] ?>" alt="Imagem de destaque do post" class="float-left pr-2 image-fluid">
+    <section class="detalhe">
+        <img src="imagens/<?= $post['imagem'] ?>" alt="Imagem de destaque do post" class="float-left pr-2 image-fluid">
 
-    <p><?= nl2br($post['texto']) ?></p>
+        <p><?= nl2br($post['texto']) ?></p>
+    </section>
 </div>
 <?php
 require "includes/footer.php";

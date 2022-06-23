@@ -17,7 +17,10 @@ header {
 }
 
 main {
-    padding-bottom: 35px;
+    min-height: 85vh;
+    max-height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 footer {
@@ -135,7 +138,24 @@ button {
     padding: 0px 20px;
 }
 
+.detalhe img {
+    max-width: 100%;
+}
+
 .card-body {
     background-color: crimson;
     color: #070707;
+}
+
+form {
+    background-color: #fff;
+    color: #070707;
+}
+
+@media screen and (max-width: 490px) {
+    .btn-conteudo {
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+    }
 }

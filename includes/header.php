@@ -1,10 +1,16 @@
 <?php
 ob_start();
 $pagina = basename($_SERVER['PHP_SELF']);
-switch($pagina) {
-    case 'index.php': $titulo = "Home | RockPedia"; break;
-    case 'post-detalhe.php': $titulo = "Post | RockPedia"; break;
-    default: $titulo = "Login | RockPedia"; break;
+switch ($pagina) {
+    case 'index.php':
+        $titulo = "Home | RockPedia";
+        break;
+    case 'post-detalhe.php':
+        $titulo = "Post | RockPedia";
+        break;
+    default:
+        $titulo = "Login | RockPedia";
+        break;
 }
 ?>
 <!DOCTYPE html>
@@ -14,7 +20,7 @@ switch($pagina) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?=$titulo?></title>
+    <title><?= $titulo ?></title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- Slick CSS -->
@@ -28,13 +34,15 @@ switch($pagina) {
 
 <body>
     <header class="stick fixed-top">
-    <?php if ($pagina = 'index.php' && 'post-detalhe.php') { ?>
-        <div class="pcd">
-            <button class="btn-pcd" title="Contraste"><i class="fa-solid fa-circle-half-stroke"></i></button>
-            <button class="btn-pcd" id="aumentar" title="Aumentar fonte">A +</button>
-            <button class="btn-pcd" id="diminuir" title="Diminuir fonte">A -</button>
-        </div>
-    <?php } ?>
+        <?php if ($pagina = 'index.php' && 'post-detalhe.php') { ?>
+            <div class="pcd">
+                <?php if ($pagina == 'login.php') { ?>
+                    <button class="btn-pcd" title="Contraste"><i class="fa-solid fa-circle-half-stroke"></i></button>
+                <?php } ?>
+                <button class="btn-pcd" id="aumentar" title="Aumentar fonte">A +</button>
+                <button class="btn-pcd" id="diminuir" title="Diminuir fonte">A -</button>
+            </div>
+        <?php } ?>
         <nav class="navbar navbar-light navbar-expand-lg sticky-top bg-danger fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand logo" href="index.php">RockPedia</a>
