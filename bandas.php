@@ -5,7 +5,6 @@ $posts = lerTodosOsPosts($conexao);
 ?>
 
     <?php foreach ($posts as $post) { ?>
-        <!-- INÍCIO Card -->
         <div class="col-md-6 my-1 px-md-1">
             <article class="card shadow-sm h-100">
                 <a href="post-detalhe.php?id=<?= $post['id'] ?>" class="card-link">
