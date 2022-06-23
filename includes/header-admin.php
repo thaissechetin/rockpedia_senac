@@ -9,14 +9,30 @@ if (isset($_GET['sair'])) {
 // Guardando o nome da página atual
 $pagina = basename($_SERVER['PHP_SELF']);
 switch ($pagina) {
-    case 'index.php': $titulo = "Home"; break;
-    case 'meu-perfil.php': $titulo = "Perfil"; break;
-    case 'posts.php': $titulo = "Posts"; break;
-    case 'post-insere.php': $titulo = "Inserir Post"; break;
-    case 'post-atualiza.php': $titulo = "Atualizar Post"; break;
-    case 'usuarios.php': $titulo = "Usuários"; break;
-    case 'usuario-insere.php': $titulo = "Inserir Usuário"; break;
-    default: $titulo = "Atualizar Usuário"; break;
+    case 'index.php':
+        $titulo = "Home";
+        break;
+    case 'meu-perfil.php':
+        $titulo = "Perfil";
+        break;
+    case 'posts.php':
+        $titulo = "Posts";
+        break;
+    case 'post-insere.php':
+        $titulo = "Inserir Post";
+        break;
+    case 'post-atualiza.php':
+        $titulo = "Atualizar Post";
+        break;
+    case 'usuarios.php':
+        $titulo = "Usuários";
+        break;
+    case 'usuario-insere.php':
+        $titulo = "Inserir Usuário";
+        break;
+    default:
+        $titulo = "Atualizar Usuário";
+        break;
 }
 ?>
 <!DOCTYPE html>
@@ -66,8 +82,41 @@ switch ($pagina) {
         </nav>
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item" aria-current="page"><a href="index.php">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page"><?=$titulo?></li>
+                <?php if ($pagina == 'index.php') { ?>
+                    <li class="breadcrumb-item active" aria-current="page">Home</li>
+                <?php } ?>
+                <?php if ($pagina == 'meu-perfil.php') { ?>
+                    <li class="breadcrumb-item" aria-current="page"><a href="index.php">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><?= $titulo ?></li>
+                <?php } ?>
+                <?php if ($pagina == 'posts.php') { ?>
+                    <li class="breadcrumb-item" aria-current="page"><a href="index.php">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><?= $titulo ?></li>
+                <?php } ?>
+                <?php if ($pagina == 'post-insere.php') { ?>
+                    <li class="breadcrumb-item" aria-current="page"><a href="index.php">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><a href="posts.php">Posts</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><?= $titulo ?></li>
+                <?php } ?>
+                <?php if ($pagina == 'post-atualiza.php') { ?>
+                    <li class="breadcrumb-item" aria-current="page"><a href="index.php">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><a href="posts.php">Posts</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><?= $titulo ?></li>
+                <?php } ?>
+                <?php if ($pagina == 'usuarios.php') { ?>
+                    <li class="breadcrumb-item" aria-current="page"><a href="index.php">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><?= $titulo ?></li>
+                <?php } ?>
+                <?php if ($pagina == 'usuario-insere.php') { ?>
+                    <li class="breadcrumb-item" aria-current="page"><a href="index.php">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><a href="usuarios.php">Usuário</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><?= $titulo ?></li>
+                <?php } ?>
+                <?php if ($pagina == 'usuario-atualiza.php') { ?>
+                    <li class="breadcrumb-item" aria-current="page"><a href="index.php">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><a href="usuarios.php">Usuário</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><?= $titulo ?></li>
+                <?php } ?>
             </ol>
     </header>
     <main class="container">

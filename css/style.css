@@ -167,6 +167,11 @@ button {
     font-size: 1.5rem;
 }
 
+.breadcrumb-item a{
+    color: crimson;
+    text-decoration: none;
+}
+
 @media screen and (max-width: 490px) {
     .btn-conteudo {
         display: flex;
