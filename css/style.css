@@ -189,6 +189,10 @@ button {
    border-radius: 10px;
 }
 
+.card-header img {
+    clip-path: inset(300px);
+}
+
 @media screen and (max-width: 490px) {
     .btn-conteudo {
         display: flex;
