@@ -5,7 +5,9 @@ $posts = lerTodosOsPosts($conexao);
 <div id="slider">
     <?php foreach ($posts as $post) { ?>
         <div class="card">
+            <span class="mask-img" >
             <img class="card-img-top" src="imagens/<?= $post['imagem'] ?>" alt="Imagem de destaque do post">
+            </span>
             <div class="card-body d-flex flex-column">
                 <h5 class="card-title"><?= $post['titulo'] ?></h5>
                 <p class="card-text"><?= $post['descricao'] ?></p>

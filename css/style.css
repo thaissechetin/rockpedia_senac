@@ -12,6 +12,12 @@ html {
     font-family: 'poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.mask-img {
+    overflow-y: hidden; 
+    height: 150px;
+    display: block;
+}
+
 header {
     background-color: #070707;
 }
@@ -147,7 +153,7 @@ button {
 }
 
 .card img{
-    height: 350px;
+    /* height: 350px; */
 }
 
 .card-link {
