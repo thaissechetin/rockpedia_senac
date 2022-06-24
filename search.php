@@ -4,7 +4,7 @@ require "includes/funcoes-posts.php";
 $termo = filter_input(INPUT_GET, 'q', FILTER_SANITIZE_SPECIAL_CHARS);
 $resultado = busca($conexao, $termo);
 ?>
-<article class="container">
+<article class="container pt-4">
     <h2 class="col-12 font-weight-light">
         Você procurou por <span class="badge bg-dark"><?= $termo ?></span>
         e obteve <span class="badge bg-info"><?= count($resultado) ?> resultados</span>

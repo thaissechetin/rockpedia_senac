@@ -1,7 +1,7 @@
 <?php
 require "includes/header.php";
 ?>
-<article class="container">
+<article class="container pt-4">
     <section class="inicio">
     <h1 class="text-center display-5">A história do Rock</h1>
 
