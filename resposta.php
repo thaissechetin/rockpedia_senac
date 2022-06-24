@@ -1,10 +1,10 @@
 <?php
 require "includes/header.php"
 ?>
-<article class="container">
+<article class="container pt-4">
     <h1 class="text-center display-5"> Quiz RockPedia</h1>
     <h2 class="text-center lead"> Resultado do seu conhecimento sobre Rock! </h2>
-    <div id="resposta">
+    <div id="resposta" class="lead">
 
         <?php
         if (empty($_POST["questao1"]) && empty($_POST["questao2"]) && empty($_POST["questao3"])) {
@@ -49,45 +49,45 @@ require "includes/header.php"
 
             if ($questao1 == $resposta1) {
                 $acertou++;
-                echo "<font color = blue> Questão 1: Correta!<br> <br></font>";
+                echo "<font color = green> Questão 1: Correta!<br> <br></font>";
             } else {
                 $errou++;
-                echo "<font color = red> 1) Errou! Resposta certa: $respostaCerta1 <br> <br> </font>";
+                echo "<font color = red> Questão 1: Errou! Resposta certa: $respostaCerta1 <br> <br> </font>";
             }
             if ($questao2 == $resposta2) {
                 $acertou++;
-                echo "<font color = blue> Questão 2: correta! <br> <br> </font> ";
+                echo "<font color = green> Questão 2: correta! <br> <br> </font> ";
             } else {
                 $errou++;
-                echo "<font color = red> 2) Errou! Resposta certa: $respostaCerta2 <br> <br ></font>";
+                echo "<font color = red> Questão 2: Errou! Resposta certa: $respostaCerta2 <br> <br ></font>";
             }
             if ($questao3 == $resposta3) {
                 $acertou++;
-                echo "<font color = blue> Questão 3: Correta! <br> <br> </font> ";
+                echo "<font color = green> Questão 3: Correta! <br> <br> </font> ";
             } else {
                 $errou++;
-                echo "<font color = red> 3) Errou! Resposta certa: $respostaCerta3<br><br></font>";
+                echo "<font color = red> Questão 3: Errou! Resposta certa: $respostaCerta3<br><br></font>";
             }
             if ($questao4 == $resposta4) {
                 $acertou++;
-                echo "<font color = blue> Questão 4: Correta! <br><br> </font> ";
+                echo "<font color = green> Questão 4: Correta! <br><br> </font> ";
             } else {
                 $errou++;
-                echo "<font color = red> 4) Errou! Resposta certa: $respostaCerta4<br> <br></font>";
+                echo "<font color = red> Questão 4: Errou! Resposta certa: $respostaCerta4<br> <br></font>";
             }
             if ($questao5 == $resposta5) {
                 $acertou++;
-                echo "<font color = blue> Questão 5: Correta! <br><br> </font> ";
+                echo "<font color = green> Questão 5: Correta! <br><br> </font> ";
             } else {
                 $errou++;
-                echo "<font color = red> 5) Errou! Resposta certa: $respostaV_F <br> <br></font>";
+                echo "<font color = red> Questão 5: Errou! Resposta certa: $respostaV_F <br> <br></font>";
             }
             if ($questao6 == $resposta6) {
                 $acertou++;
-                echo "<font color = blue> Questão 6: Correta! <br><br> </font> ";
+                echo "<font color = green> Questão 6: Correta! <br><br> </font> ";
             } else {
                 $errou++;
-                echo "<font color = red> 6) Errou! Resposta certa: $respostaV_F <br> <br></font>";
+                echo "<font color = red> Questão 6: Errou! Resposta certa: $respostaV_F <br> <br></font>";
             }
         }
         ?>

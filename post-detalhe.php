@@ -4,7 +4,7 @@ require "includes/funcoes-posts.php";
 $idPost = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);
 $post = lerDetalhes($conexao, $idPost);
 ?>
-<div class="container-fluid">
+<div class="container-fluid pt-4">
     <h2 class="text-center display-4"> <?= $post['titulo'] ?> </h2>
     <p class="font-weight-light lead">
         <time>

@@ -1,3 +1,4 @@
+</main>
 <footer class="fixed-bottom">
     <p class="text-center lead">RockPedia | Senac Penha &copy; 2022</p>
 </footer>

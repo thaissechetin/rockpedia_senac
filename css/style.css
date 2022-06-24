@@ -12,6 +12,12 @@ html {
     font-family: 'poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.mask-img {
+    overflow-y: hidden; 
+    height: 150px;
+    display: block;
+}
+
 header {
     background-color: #070707;
 }
@@ -91,16 +97,6 @@ button {
     color: #fff;
 }
 
-#slider {
-    margin: 0 auto;
-    width: 100%;
- }
-
-#slider img {
-    width: 18rem;
-    height: 200px;
-}
-
 .slick-prev::before,
 .slick-next::before {
     color: black;
@@ -138,7 +134,8 @@ button {
 }
 
 .detalhe img {
-    max-width: 100%;
+    display: block;
+    text-align: center;
 }
 
 .card-body {
@@ -149,6 +146,10 @@ button {
 .login {
     background-color: #fff;
     color: #070707;
+}
+
+#slick {
+    height: 50vh;
 }
 
 .card-link {
@@ -174,14 +175,14 @@ button {
 .quiz-rock {
     background-color: crimson;
     border-radius: 20px;
-    padding: 10px;
+    padding: 0px 10px;
 }
 
 #btn, #enviar{
     font-size: 1.2em;
     background: #070707;
     border: 0;
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
     color: #fff;
     padding: 0.2em 0.6em;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
