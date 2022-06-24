@@ -1,7 +1,7 @@
 <?php
 require "includes/header.php"
 ?>
-<article class="container">
+<article class="container pt-4">
     <h1 class="text-center display-5"> Quiz RockPedia</h1>
     <h2 class="text-center lead"> Resultado do seu conhecimento sobre Rock! </h2>
     <div id="resposta" class="lead">
