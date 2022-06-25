@@ -7,8 +7,7 @@ $post = lerUmPost($conexao, $idPost, $_SESSION['id'], $_SESSION['tipo']);
 
 if (isset($_POST['atualizar'])) {
     $titulo = filter_input(INPUT_POST, 'titulo', FILTER_SANITIZE_SPECIAL_CHARS);
-    // $texto = filter_input(INPUT_POST, 'editor1', FILTER_SANITIZE_SPECIAL_CHARS);
-    $texto = filter_input(INPUT_POST, 'editor1');
+    $texto = filter_input(INPUT_POST, 'editor2');
     $descricao = filter_input(INPUT_POST, 'descricao', FILTER_SANITIZE_SPECIAL_CHARS);
     // logicá de atualização da foto
 
@@ -38,7 +37,7 @@ if (isset($_POST['atualizar'])) {
 
     <div class="form-group textos">
         <label for="texto">Texto:</label>
-        <textarea class="form-control" name="editor1" id="texto" cols="50" rows="10" required><?= $post['texto'] ?></textarea>
+        <textarea class="form-control" name="editor2" id="texto" cols="50" rows="10" required><?= $post['texto'] ?></textarea>
     </div>
 
     <div class="form-group textos">
@@ -63,14 +62,14 @@ if (isset($_POST['atualizar'])) {
 
 <script src="https://cdn.ckeditor.com/[version.number]/[distribution]/ckeditor.js"></script>
 <script>
-    CKEDITOR.replace('editor1');
+    CKEDITOR.replace('editor2');
     CKEDITOR.plugins.addExternal('abbr', '/myplugins/abbr/', 'plugin.js');
 
     // extraPlugins needs to be set too.
-    CKEDITOR.replace('editor1', {
+    CKEDITOR.replace('editor2', {
         extraPlugins: 'abbr'
     });
-    CKEDITOR.replace('editor1', {
+    CKEDITOR.replace('editor2', {
         skin: 'moonocolor,/myskins/moonocolor/'
     });
 </script>
