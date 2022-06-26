@@ -7,23 +7,18 @@ require "includes/header.php"
     <div id="resposta" class="lead">
 
         <?php
-        if (empty($_POST["questao1"]) && empty($_POST["questao2"]) && empty($_POST["questao3"])) {
+        if (empty($_POST["questao1"]) && empty($_POST["questao2"]) && empty($_POST["questao3"]) && empty($_POST["questao4"]) && empty($_POST["questao5"]) || empty($_POST["questao6"])) {
         ?>
-            <p style="color:crimson;font-weight: bold;font-size:1.2rem;" class="text-center">Por favor responda as questões !</p>
+            <p style="color:crimson;font-weight: bold;font-size:1.2rem;" class="text-center">Por favor responda <em>todas</em> as questões !</p>
 
         <?php
         } else {
-
-
-
-
             $questao1 = $_POST['questao1'];
             $questao2 = $_POST['questao2'];
             $questao3 = $_POST['questao3'];
             $questao4 = $_POST['questao4'];
             $questao5 = $_POST['questao5'];
             $questao6 = $_POST['questao6'];
-
 
             $resposta1 = "b";
             $resposta2 = "c";
@@ -40,12 +35,10 @@ require "includes/header.php"
             $respostaCerta4 = " Plebe Rude";
             $respostaV_F = "Verdadeiro";
 
-
             /* Validador de acertos e erros */
 
             $acertou = 0;
             $errou = 0;
-
 
             if ($questao1 == $resposta1) {
                 $acertou++;

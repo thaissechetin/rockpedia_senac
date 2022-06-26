@@ -3,18 +3,21 @@ require "includes/header.php";
 require "includes/funcoes-posts.php";
 $posts = lerTodosOsPosts($conexao);
 ?>
-
-    <?php foreach ($posts as $post) { ?>
-        <div class="col-md-6 my-1 px-md-1">
-            <article class="card shadow-sm h-100">
-                <a href="post-detalhe.php?id=<?= $post['id'] ?>" class="card-link">
-                    <img class="card-img-top" src="imagens/<?= $post['imagem'] ?>" alt="Imagem de destaque do post">
-                    <div class="card-body">
+<article class="container pt-4">
+    <div class="row my-1 mx-md-n1">
+        <?php foreach ($posts as $post) { ?>
+            <div class="col-md-6 my-1 px-md-1">
+                <div class="card h-100 border border-danger">
+                    <span class="mask-imagem">
+                        <img class="card-img-top" src="imagens/<?= $post['imagem'] ?>" alt="Imagem de destaque do post">
+                    </span>
+                    <div class="card-body d-flex flex-column">
                         <h5 class="card-title"><?= $post['titulo'] ?></h5>
                         <p class="card-text"><?= $post['descricao'] ?></p>
+                        <a href="post-detalhe.php?id=<?= $post['id'] ?>" class="btn btn-dark mt-auto">Ler mais!</a>
                     </div>
-                </a>
-            </article>
-        </div>
-    <?php } ?>
-<?php require "includes/footer.php"; ?>
+                </div>
+            </div>
+        <?php } ?>
+    </div>
+    <?php require "includes/footer.php"; ?>

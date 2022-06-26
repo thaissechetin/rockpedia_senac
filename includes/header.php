@@ -8,6 +8,12 @@ switch ($pagina) {
     case 'post-detalhe.php':
         $titulo = "Post | RockPedia";
         break;
+    case 'bandas.php':
+        $titulo = "Bandas | RockPedia";
+        break;
+    case 'quiz.php':
+        $titulo = "Quiz | RockPedia";
+        break;
     default:
         $titulo = "Login | RockPedia";
         break;
@@ -58,6 +64,9 @@ switch ($pagina) {
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
                                 <a class="nav-link" aria-current="page" href="index.php"><i class="fa-solid fa-house" title="Home"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="bandas.php">Bandas</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" aria-current="page" href="quiz.php">Quiz</a>
