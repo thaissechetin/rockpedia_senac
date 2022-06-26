@@ -8,9 +8,26 @@
 <script>
     $('#slider').slick({
         slidesToShow: 3,
-        slidesToScroll: 2,
+        slidesToScroll: 1,
         autoplay: true,
-        sutoplayspeed: 2500,
+        autoplaySpeed: 2000,
+        responsive: [{
+                breakpoint: 1024,
+                settings: {
+                    infinite: true,
+                    arrows: true,
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    infinite: true,
+                    arrows: true,
+                    slidesToShow: 1
+                }
+            }
+        ]
     });
 </script>
 <!-- bootstrap js -->

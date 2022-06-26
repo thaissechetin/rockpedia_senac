@@ -14,8 +14,8 @@ html {
 
 .mask-img {
     overflow-y: hidden; 
-    max-height: 180px;
-    display: block;
+    height: 200px;
+    display: flex;
 }
 
 .mask-imagem {
@@ -150,6 +150,10 @@ button {
     max-height: 100%;
 }
 
+#slider .card-body {
+    height: 130px;
+}
+
 .card-body {
     background-color: crimson;
     color: #070707;
@@ -223,5 +227,37 @@ button {
         display: flex;
         flex-direction: column;
         padding: 5%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .mask-imagem {
+        overflow-y: hidden; 
+        height: 170px;
+        display: block;
+    }
+
+    .mask-img {
+        overflow-y: hidden; 
+        height: 200px;
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .mask-imagem {
+        overflow-y: hidden; 
+        height: auto;
+        display: block;
+    }
+
+    .mask-img {
+        overflow-y: hidden; 
+        max-height: 250px;
+        display: block;
+    }
+
+    #slider .card-body {
+        height: auto;
     }
 }

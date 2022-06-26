@@ -9,7 +9,7 @@
 <script src="../js/senha.js"></script>
 
 <?php if ($pagina == 'posts.php' || $pagina == 'usuarios.php') { ?>
-    <script src="../js/confirm-exclusao.js"></script>
+    <script src="../js/confirmar-exclusao.js"></script>
 <?php } ?>
 
 <?php if ($pagina == 'post-insere.php' || $pagina == 'post-atualiza.php') { ?>

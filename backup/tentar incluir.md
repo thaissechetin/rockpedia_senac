@@ -3,7 +3,6 @@ https://ckeditor.com/ckeditor-4/download/
 https://bennettfeely.com/clippy/
 
 https://metring.com.br/endereco-ip-em-php;
-# problema 1 - achar uma solução melhor para os cards incluidos na index 
 
 2- Plugin de comentários do facebook: O próprio Facebook gerencia.
 - Entrar na página Facebook por developers;
