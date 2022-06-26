@@ -15,7 +15,7 @@ $posts = lerTodosOsPosts($conexao);
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title"><?= $post['titulo'] ?></h5>
                             <p class="card-text"><?= $post['descricao'] ?></p>
-                            <button class="btn btn-dark">Ler mais!</button>
+                            <button class="btn btn-dark mt-auto">Ler mais!</button>
                         </div>
                     </div>
                 </a>
