@@ -2,6 +2,11 @@
 <footer class="fixed-bottom">
     <p class="text-center lead">RockPedia | Senac Penha &copy; 2022</p>
 </footer>
+
+<!-- vanilla -->
+<script src="js/vanilla-masker.min.js"></script>
+<script src="js/form.js"></script>
+
 <!-- Slick -->
 <script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/slick/slick.min.js"></script>

@@ -14,6 +14,9 @@ switch ($pagina) {
     case 'quiz.php':
         $titulo = "Quiz | RockPedia";
         break;
+    case 'contato.php':
+        $titulo = "Contato | RockPedia";
+        break;
     default:
         $titulo = "Login | RockPedia";
         break;
@@ -70,6 +73,9 @@ switch ($pagina) {
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" aria-current="page" href="quiz.php">Quiz</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="contato.php">Contato</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" aria-current="page" href="login.php"><i class="fa-solid fa-lock" title="Login"></i></a>
