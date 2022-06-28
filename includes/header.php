@@ -46,9 +46,7 @@ switch ($pagina) {
     <header class="stick fixed-top">
         <?php if ($pagina = 'index.php' && 'post-detalhe.php') { ?>
             <div class="pcd">
-                <?php if ($pagina == 'login.php') { ?>
-                    <button class="btn-pcd" title="Contraste"><i class="fa-solid fa-circle-half-stroke"></i></button>
-                <?php } ?>
+                <button class="btn-pcd" title="Contraste"><i class="fa-solid fa-circle-half-stroke"></i></button>
                 <button class="btn-pcd" id="aumentar" title="Aumentar fonte">A +</button>
                 <button class="btn-pcd" id="diminuir" title="Diminuir fonte">A -</button>
             </div>
@@ -71,6 +69,9 @@ switch ($pagina) {
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" aria-current="page" href="bandas.php">Bandas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="player.php">Player</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" aria-current="page" href="quiz.php">Quiz</a>
