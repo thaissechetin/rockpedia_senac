@@ -1,5 +1,5 @@
 const formulario = document.querySelector("form"); 
-const inputTelefone = formulario.querySelector("#telefone");
+const inputTelefone = document.querySelector("#telefone");
 const spanMaximo = document.querySelector("#maximo");
 const textMsg = document.querySelector("#mensagem");
 
